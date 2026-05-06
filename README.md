@@ -4,12 +4,6 @@ Static legal pages for MusiLink, ready for GitHub Pages.
 
 ## GitHub Pages
 
-Use these settings in the repository:
-
-- Source: Deploy from a branch
-- Branch: main
-- Folder: /root
-
 The privacy policy URL will be:
 
 ```text
