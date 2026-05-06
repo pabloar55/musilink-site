@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Account Deletion - MusiLink</title>
+  <meta name="description" content="How to delete your MusiLink account and associated data.">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #fbfaf7;
+      --text: #1f2428;
+      --muted: #5d6673;
+      --line: #dadde1;
+      --accent: #176b87;
+      --accent-strong: #0f4c5c;
+      --focus: #f4b942;
+      --surface: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.65;
+      color: var(--text);
+      background:
+        linear-gradient(180deg, #eef7f8 0, rgba(238, 247, 248, 0) 320px),
+        var(--bg);
+    }
+
+    .wrap {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 32px 0 56px;
+    }
+
+    header {
+      padding: 36px 0 22px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      margin: 0 0 10px;
+      color: var(--accent-strong);
+      font-size: 0.92rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1.1;
+      letter-spacing: 0;
+    }
+
+    .updated {
+      margin: 16px 0 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 22px 0 0;
+    }
+
+    button {
+      min-height: 40px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 8px 12px;
+      color: var(--text);
+      background: var(--surface);
+      font: inherit;
+      cursor: pointer;
+    }
+
+    button:hover,
+    button[aria-pressed="true"] {
+      border-color: var(--accent);
+      color: #ffffff;
+      background: var(--accent);
+    }
+
+    button:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 2px;
+    }
+
+    main {
+      margin-top: 28px;
+    }
+
+    .js article {
+      display: none;
+    }
+
+    .js article.active {
+      display: block;
+    }
+
+    section {
+      padding: 24px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      color: var(--accent-strong);
+      font-size: 1.15rem;
+      line-height: 1.35;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    ol,
+    ul {
+      margin: 0 0 12px 1.2rem;
+      padding: 0;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    a {
+      color: var(--accent-strong);
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 0.18em;
+    }
+
+    .notice {
+      margin: 28px 0 0;
+      padding: 14px 16px;
+      border-left: 4px solid var(--accent);
+      background: rgba(23, 107, 135, 0.08);
+      color: var(--muted);
+    }
+
+    footer {
+      padding-top: 28px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 560px) {
+      .wrap {
+        width: min(100% - 24px, 920px);
+        padding-top: 20px;
+      }
+
+      header {
+        padding-top: 24px;
+      }
+
+      button {
+        flex: 1 1 calc(50% - 8px);
+      }
+    }
+  </style>
+  <script>
+    document.documentElement.classList.add('js');
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <p class="brand">MusiLink</p>
+      <h1 id="page-title">Account Deletion</h1>
+      <p class="updated" id="page-updated">Last updated: 6 May 2026</p>
+      <nav aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true">English</button>
+        <button type="button" data-lang="es" aria-pressed="false">Español</button>
+      </nav>
+    </header>
+
+    <p class="notice" id="notice">This page explains how MusiLink users can delete their account and associated data.</p>
+
+    <main>
+      <article id="content-en" class="active" lang="en" data-title="Account Deletion" data-updated="Last updated: 6 May 2026">
+        <section>
+          <h2>App and developer</h2>
+          <p>This page applies to the MusiLink mobile application, developed and operated by Pablo Armas.</p>
+        </section>
+
+        <section>
+          <h2>Delete your account in the app</h2>
+          <ol>
+            <li>Open the MusiLink app.</li>
+            <li>Sign in to the account you want to delete.</li>
+            <li>Go to Settings.</li>
+            <li>Tap Delete account.</li>
+            <li>Confirm the deletion and complete the required re-authentication step.</li>
+          </ol>
+          <p>After confirmation, the deletion action is permanent and cannot be undone.</p>
+        </section>
+
+        <section>
+          <h2>Request deletion outside the app</h2>
+          <p>If you cannot access the app, you can request deletion by email at <a href="mailto:armasp80@gmail.com?subject=MusiLink%20account%20deletion%20request">armasp80@gmail.com</a>.</p>
+          <p>Include the email address used for your MusiLink account. We may ask for additional information only if needed to verify that you own the account.</p>
+        </section>
+
+        <section>
+          <h2>Data deleted</h2>
+          <p>When your MusiLink account is deleted, we delete or anonymize the following data associated with your account:</p>
+          <ul>
+            <li>Your Firebase Authentication account.</li>
+            <li>Private account data, including email-related private user data, preferences, tokens and rate-limit records.</li>
+            <li>Your profile photo stored in Firebase Storage.</li>
+            <li>Your selected top artists, inferred genres, daily song and music profile data.</li>
+            <li>Your friend relationships and sent or received friend requests.</li>
+            <li>Messages you sent in chats and emoji reactions you added. If a conversation becomes empty after this deletion, the conversation is deleted.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Data retained</h2>
+          <p>The public profile document is kept only as an anonymous placeholder named "Deleted user" so technical references in the service do not break. It no longer contains your name, username, photo, Spotify ID, selected artists, genres, daily song or private account data.</p>
+          <p>Messages sent by other users are not deleted from their conversations. Some technical records, crash reports or analytics data held by Google Firebase may remain according to Google's own retention policies.</p>
+        </section>
+
+        <section>
+          <h2>Retention period</h2>
+          <p>In-app account deletion starts immediately after you confirm the deletion and complete re-authentication. App account data controlled by MusiLink is deleted or anonymized during that process.</p>
+          <p>Email deletion requests are processed within 30 days after we verify account ownership. Technical logs, crash reports and analytics data processed by Google Firebase may be retained for the periods defined by Google Firebase and Google Analytics retention settings or where required for security, fraud prevention, legal compliance or service integrity.</p>
+        </section>
+      </article>
+
+      <article id="content-es" lang="es" data-title="Eliminación de cuenta" data-updated="Última actualización: 6 de mayo de 2026">
+        <section>
+          <h2>Aplicación y desarrollador</h2>
+          <p>Esta página se aplica a la aplicación móvil MusiLink, desarrollada y operada por Pablo Armas.</p>
+        </section>
+
+        <section>
+          <h2>Eliminar tu cuenta desde la app</h2>
+          <ol>
+            <li>Abre la app MusiLink.</li>
+            <li>Inicia sesión en la cuenta que quieres eliminar.</li>
+            <li>Ve a Ajustes.</li>
+            <li>Toca Eliminar cuenta.</li>
+            <li>Confirma la eliminación y completa el paso de reautenticación requerido.</li>
+          </ol>
+          <p>Después de confirmar, la eliminación es permanente y no se puede deshacer.</p>
+        </section>
+
+        <section>
+          <h2>Solicitar la eliminación fuera de la app</h2>
+          <p>Si no puedes acceder a la app, puedes solicitar la eliminación por email en <a href="mailto:armasp80@gmail.com?subject=Solicitud%20de%20eliminacion%20de%20cuenta%20MusiLink">armasp80@gmail.com</a>.</p>
+          <p>Incluye la dirección de email usada en tu cuenta de MusiLink. Podemos pedir información adicional solo si es necesario para verificar que eres el propietario de la cuenta.</p>
+        </section>
+
+        <section>
+          <h2>Datos que se eliminan</h2>
+          <p>Cuando se elimina tu cuenta de MusiLink, eliminamos o anonimizamos los siguientes datos asociados a tu cuenta:</p>
+          <ul>
+            <li>Tu cuenta de Firebase Authentication.</li>
+            <li>Datos privados de cuenta, incluidos datos privados asociados al email, preferencias, tokens y registros de límite de uso.</li>
+            <li>Tu foto de perfil almacenada en Firebase Storage.</li>
+            <li>Tus artistas principales seleccionados, géneros inferidos, canción del día y datos de perfil musical.</li>
+            <li>Tus relaciones de amistad y solicitudes de amistad enviadas o recibidas.</li>
+            <li>Los mensajes que enviaste en chats y las reacciones con emojis que añadiste. Si una conversación queda vacía tras la eliminación, la conversación se elimina.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Datos que se conservan</h2>
+          <p>El documento de perfil público se conserva solo como un marcador anónimo llamado "Deleted user" para no romper referencias técnicas del servicio. Ya no contiene tu nombre, nombre de usuario, foto, ID de Spotify, artistas seleccionados, géneros, canción del día ni datos privados de cuenta.</p>
+          <p>Los mensajes enviados por otros usuarios no se eliminan de sus conversaciones. Algunos registros técnicos, informes de fallos o datos analíticos conservados por Google Firebase pueden permanecer según las políticas de retención propias de Google.</p>
+        </section>
+
+        <section>
+          <h2>Periodo de retención</h2>
+          <p>La eliminación desde la app empieza inmediatamente después de confirmar la eliminación y completar la reautenticación. Los datos de cuenta controlados por MusiLink se eliminan o anonimizan durante ese proceso.</p>
+          <p>Las solicitudes de eliminación por email se procesan en un plazo máximo de 30 días después de verificar la propiedad de la cuenta. Los registros técnicos, informes de fallos y datos analíticos procesados por Google Firebase pueden conservarse durante los periodos definidos por la configuración de retención de Google Firebase y Google Analytics, o cuando sea necesario por seguridad, prevención de fraude, cumplimiento legal o integridad del servicio.</p>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 MusiLink. Contact: <a href="mailto:armasp80@gmail.com">armasp80@gmail.com</a>. <a href="../privacy-policy/">Privacy Policy</a></p>
+    </footer>
+  </div>
+
+  <script>
+    const notices = {
+      en: 'This page explains how MusiLink users can delete their account and associated data.',
+      es: 'Esta página explica cómo los usuarios de MusiLink pueden eliminar su cuenta y los datos asociados.'
+    };
+
+    const articles = Array.from(document.querySelectorAll('article[id^="content-"]'));
+    const buttons = Array.from(document.querySelectorAll('button[data-lang]'));
+    const title = document.getElementById('page-title');
+    const updated = document.getElementById('page-updated');
+    const notice = document.getElementById('notice');
+
+    function activate(lang, updateUrl = true) {
+      const article = document.getElementById(`content-${lang}`) || document.getElementById('content-en');
+      const activeLang = article.lang;
+
+      articles.forEach((item) => item.classList.toggle('active', item === article));
+      buttons.forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.lang === activeLang)));
+      title.textContent = article.dataset.title;
+      updated.textContent = article.dataset.updated;
+      notice.textContent = notices[activeLang] || notices.en;
+      document.documentElement.lang = activeLang;
+      document.title = `${article.dataset.title} - MusiLink`;
+
+      if (updateUrl) {
+        const url = new URL(window.location);
+        url.searchParams.set('lang', activeLang);
+        window.history.replaceState({}, '', url);
+      }
+    }
+
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => activate(button.dataset.lang));
+    });
+
+    const requestedLang = new URLSearchParams(window.location.search).get('lang');
+    const browserLang = navigator.language ? navigator.language.slice(0, 2) : 'en';
+    activate(requestedLang || browserLang || 'en', Boolean(requestedLang));
+  </script>
+</body>
+</html>
