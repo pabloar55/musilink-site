@@ -177,7 +177,7 @@
     <header>
       <p class="brand">MusiLink</p>
       <h1 id="page-title">Privacy Policy</h1>
-      <p class="updated" id="page-updated">Last updated: 5 May 2026</p>
+      <p class="updated" id="page-updated">Last updated: 18 September 2026</p>
       <nav aria-label="Language">
         <button type="button" data-lang="en" aria-pressed="true">English</button>
         <button type="button" data-lang="es" aria-pressed="false">Español</button>
@@ -189,7 +189,7 @@
     <p class="notice">This page contains the Privacy Policy for the MusiLink mobile application.</p>
 
     <main>
-      <article id="policy-en" class="active" lang="en" data-title="Privacy Policy" data-updated="Last updated: 5 May 2026">
+      <article id="policy-en" class="active" lang="en" data-title="Privacy Policy" data-updated="Last updated: 18 September 2026">
         <section>
           <h2>1. Data Controller</h2>
           <p>MusiLink is developed and operated by Pablo Armas (armasp80@gmail.com), established in Spain. Pablo Armas is the data controller responsible for processing your personal data in accordance with Regulation (EU) 2016/679 (GDPR).</p>
@@ -219,18 +219,20 @@
 
         <section>
           <h2>4. Third-Party Services</h2>
-          <p>We use the following third-party services, each with their own privacy policies:</p>
+          <p>We use the following third-party services:</p>
           <ul>
-            <li>Google Firebase Firestore, Crashlytics and Analytics - Google LLC. Your profile data, messages, and usage events are stored on servers in the European region (europe-southwest1).</li>
-            <li>Google Firebase Storage - Google LLC. Profile photos are stored on servers located in the United States under standard contractual clauses (Art. 46 GDPR).</li>
-            <li>Cloud Functions - Google LLC. Your message and friend request data is processed on servers in the European region (europe-southwest1).</li>
-            <li>Spotify and Last.fm. Used as music catalogue providers for artist/song search and artist suggestions. No Spotify account connection is required.</li>
+            <li>Firebase Authentication - Google. Manages account sign-in and processes authentication data in the United States.</li>
+            <li>Cloud Firestore - Google. Profiles, messages and other social data are stored in the configured database region (europe-southwest1, Madrid).</li>
+            <li>Cloud Storage for Firebase - Google. Profile photos are stored in the bucket configured in the United States.</li>
+            <li>Cloud Functions for Firebase - Google. Messaging and friend-request functions run in europe-southwest1. Some scheduled and deletion processes run in europe-west1 (Belgium).</li>
+            <li>Firebase Analytics and Crashlytics - Google. Process usage events and crash reports; their processing locations are not determined by the Firestore region.</li>
+            <li>Spotify and Last.fm. Provide catalogue data for music search and suggestions. No Spotify account connection is required.</li>
           </ul>
         </section>
 
         <section>
           <h2>5. Data Retention &amp; Deletion</h2>
-          <p>We do not retain your data beyond the time you use the App. When you delete your account via the 'Delete account' button in Settings, we delete your private data, profile photo, relationships, requests, tokens, preferences, and music data. The public profile is replaced with an anonymous placeholder so technical references do not break. Messages you sent are removed from conversations and your reactions are removed; if a conversation becomes empty, it is deleted. Some technical records, crash reports, or analytics data held by Google may be subject to Google's own retention policies.</p>
+          <p>We keep account data while the account is active. When you delete your account via the 'Delete account' button in Settings, we delete your private data, profile photo, relationships, requests, tokens, preferences, and music data. The public profile is replaced with an anonymous placeholder so technical references do not break. Messages you sent are removed from conversations and your reactions are removed; if a conversation becomes empty, it is deleted. Some technical records, crash reports, or analytics data held by Google may be subject to its own retention periods.</p>
         </section>
 
         <section>
@@ -239,7 +241,7 @@
           <ul>
             <li>Access: request a copy of data we hold about you.</li>
             <li>Rectification: correct inaccurate or incomplete data.</li>
-            <li>Erasure: delete your account and all data via the 'Delete account' button in Settings.</li>
+            <li>Erasure: request deletion of your data; you can also delete your account in Settings, with the scope described in section 5.</li>
             <li>Restriction: request we limit processing of your data.</li>
             <li>Portability: receive your data in a structured, machine-readable format.</li>
             <li>Objection: object to processing based on legitimate interest.</li>
@@ -265,12 +267,12 @@
 
         <section>
           <h2>10. International Data Transfers</h2>
-          <p>Profile photos are stored in Google Firebase Storage with servers located in the United States. By using the App, you explicitly authorise this international data transfer of image data. Google has implemented the necessary technical and organisational measures under the Standard Contractual Clauses approved by the European Commission (Art. 46 GDPR) to ensure an adequate level of protection equivalent to that in the EU.</p>
-          <p>Your personal data, messages, and music profile data are stored on servers located in the European region (europe-southwest1), within the EU.</p>
+          <p>Firebase Authentication processes authentication data in the United States, and profile photos are stored there through Cloud Storage for Firebase. Analytics and Crashlytics may process data in other Google infrastructure locations. Firestore's europe-southwest1 location does not automatically apply to these other services.</p>
+          <p>Transfers outside the European Economic Area are governed by Google's data processing terms and applicable safeguards, including standard contractual clauses where relevant. Merely using the app does not constitute consent to these transfers. You can request information about the safeguards at armasp80@gmail.com. Profiles, messages and music data stored in Firestore are held in europe-southwest1.</p>
         </section>
       </article>
 
-      <article id="policy-es" lang="es" data-title="Política de privacidad" data-updated="Última actualización: 5 de mayo de 2026">
+      <article id="policy-es" lang="es" data-title="Política de privacidad" data-updated="Última actualización: 18 de septiembre de 2026">
         <section>
           <h2>1. Responsable del tratamiento</h2>
           <p>MusiLink es desarrollada y operada por Pablo Armas (armasp80@gmail.com), con domicilio en España. Pablo Armas actúa como responsable del tratamiento de tus datos personales conforme al Reglamento (UE) 2016/679 (RGPD).</p>
@@ -300,18 +302,20 @@
 
         <section>
           <h2>4. Servicios de terceros</h2>
-          <p>Utilizamos los siguientes servicios de terceros, sujetos a sus propias políticas de privacidad:</p>
+          <p>Utilizamos los siguientes servicios de terceros:</p>
           <ul>
-            <li>Google Firebase Firestore, Crashlytics y Analytics - Google LLC. Tus datos de perfil, mensajes y eventos de uso se almacenan en servidores en la región europea (europe-southwest1).</li>
-            <li>Google Firebase Storage - Google LLC. Las fotos de perfil se almacenan en servidores ubicados en Estados Unidos bajo cláusulas contractuales tipo (Art. 46 RGPD).</li>
-            <li>Cloud Functions - Google LLC. Tus datos de mensajes y solicitudes de amistad se procesan en servidores en la región europea (europe-southwest1).</li>
-            <li>Spotify y Last.fm. Se utilizan como proveedores de catálogo musical para búsqueda de artistas/canciones y sugerencias de artistas. No es necesario conectar una cuenta de Spotify.</li>
+            <li>Firebase Authentication - Google. Gestiona el acceso a las cuentas y procesa datos de autenticación en Estados Unidos.</li>
+            <li>Cloud Firestore - Google. Los perfiles, mensajes y otros datos sociales se almacenan en la región configurada para la base de datos (europe-southwest1, Madrid).</li>
+            <li>Cloud Storage for Firebase - Google. Las fotos de perfil se almacenan en el bucket configurado en Estados Unidos.</li>
+            <li>Cloud Functions for Firebase - Google. Las funciones de mensajería y solicitudes de amistad se ejecutan en europe-southwest1. Algunos procesos programados y de eliminación se ejecutan en europe-west1 (Bélgica).</li>
+            <li>Firebase Analytics y Crashlytics - Google. Tratan eventos de uso e informes de fallos; su ubicación de tratamiento no viene determinada por la región de Firestore.</li>
+            <li>Spotify y Last.fm. Proporcionan datos de catálogo para búsquedas y sugerencias musicales. No es necesario conectar una cuenta de Spotify.</li>
           </ul>
         </section>
 
         <section>
           <h2>5. Conservación y eliminación de datos</h2>
-          <p>No conservamos tus datos más allá del tiempo que uses la aplicación. Al eliminar tu cuenta mediante el botón 'Eliminar cuenta' en Ajustes, borramos tus datos privados, foto de perfil, relaciones, solicitudes, tokens, preferencias y datos musicales. El perfil público se sustituye por un marcador anónimo para no romper referencias técnicas. Los mensajes que hayas enviado se eliminan de las conversaciones y tus reacciones se retiran; si una conversación queda vacía, se borra. Algunos registros técnicos, informes de fallos o datos analíticos conservados por Google pueden estar sujetos a las políticas de retención propias de Google.</p>
+          <p>Conservamos los datos de la cuenta mientras esté activa. Al eliminar tu cuenta mediante el botón 'Eliminar cuenta' en Ajustes, borramos tus datos privados, foto de perfil, relaciones, solicitudes, tokens, preferencias y datos musicales. El perfil público se sustituye por un marcador anónimo para no romper referencias técnicas. Los mensajes que hayas enviado se eliminan de las conversaciones y tus reacciones se retiran; si una conversación queda vacía, se borra. Algunos registros técnicos, informes de fallos o datos analíticos conservados por Google pueden estar sujetos a sus propios plazos de retención.</p>
         </section>
 
         <section>
@@ -320,7 +324,7 @@
           <ul>
             <li>Acceso: solicitar una copia de los datos que conservamos sobre ti.</li>
             <li>Rectificación: corregir datos inexactos o incompletos.</li>
-            <li>Supresión: eliminar tu cuenta y todos los datos asociados mediante el botón 'Eliminar cuenta' en Ajustes.</li>
+            <li>Supresión: solicitar la eliminación de tus datos; también puedes eliminar la cuenta desde Ajustes, con el alcance descrito en la sección 5.</li>
             <li>Limitación: solicitar que limitemos el tratamiento de tus datos.</li>
             <li>Portabilidad: recibir tus datos en un formato estructurado y legible por máquina.</li>
             <li>Oposición: oponerte al tratamiento basado en interés legítimo.</li>
@@ -346,12 +350,12 @@
 
         <section>
           <h2>10. Transferencias internacionales de datos</h2>
-          <p>Las fotos de perfil se almacenan en Google Firebase Storage, con servidores ubicados en Estados Unidos. Al usar la aplicación, autorizas explícitamente esta transferencia internacional de datos de imágenes. Google ha implementado las medidas técnicas y organizativas necesarias bajo las Cláusulas Contractuales Tipo aprobadas por la Comisión Europea (Art. 46 RGPD) para garantizar un nivel de protección adecuado equivalente al de la UE.</p>
-          <p>Tus datos personales, mensajes y datos de perfil musical se almacenan en servidores ubicados en la región europea (europe-southwest1), dentro de la UE.</p>
+          <p>Firebase Authentication procesa datos de autenticación en Estados Unidos y las fotos de perfil se almacenan allí mediante Cloud Storage for Firebase. Analytics y Crashlytics pueden tratar datos en otras ubicaciones de la infraestructura de Google. La ubicación de Firestore en europe-southwest1 no se aplica automáticamente a estos otros servicios.</p>
+          <p>Las transferencias fuera del Espacio Económico Europeo se rigen por las condiciones de tratamiento de datos de Google y las garantías aplicables, incluidas las cláusulas contractuales tipo cuando procedan. El mero uso de la app no constituye consentimiento para estas transferencias. Puedes solicitar información sobre las garantías en armasp80@gmail.com. Los perfiles, mensajes y datos musicales guardados en Firestore se almacenan en europe-southwest1.</p>
         </section>
       </article>
 
-      <article id="policy-fr" lang="fr" data-title="Politique de confidentialité" data-updated="Dernière mise à jour : 5 mai 2026">
+      <article id="policy-fr" lang="fr" data-title="Politique de confidentialité" data-updated="Dernière mise à jour : 18 septembre 2026">
         <section>
           <h2>1. Responsable du traitement</h2>
           <p>MusiLink est développée et exploitée par Pablo Armas (armasp80@gmail.com), établi en Espagne. Pablo Armas agit en tant que responsable du traitement de vos données personnelles conformément au Règlement (UE) 2016/679 (RGPD).</p>
@@ -381,18 +385,20 @@
 
         <section>
           <h2>4. Services tiers</h2>
-          <p>Nous utilisons les services tiers suivants, soumis à leurs propres politiques de confidentialité :</p>
+          <p>Nous utilisons les services tiers suivants :</p>
           <ul>
-            <li>Google Firebase Firestore, Crashlytics et Analytics - Google LLC. Vos données de profil, messages et événements d'utilisation sont stockés sur des serveurs situés dans la région européenne (europe-southwest1).</li>
-            <li>Google Firebase Storage - Google LLC. Les photos de profil sont stockées sur des serveurs situés aux États-Unis dans le cadre de clauses contractuelles types (Art. 46 RGPD).</li>
-            <li>Cloud Functions - Google LLC. Vos données de messages et demandes d'amitié sont traitées sur des serveurs situés dans la région européenne (europe-southwest1).</li>
-            <li>Spotify et Last.fm. Utilisés comme fournisseurs de catalogue musical pour la recherche d'artistes/chansons et les suggestions d'artistes. Aucune connexion à un compte Spotify n'est requise.</li>
+            <li>Firebase Authentication - Google. Gère la connexion aux comptes et traite les données d'authentification aux États-Unis.</li>
+            <li>Cloud Firestore - Google. Les profils, messages et autres données sociales sont stockés dans la région configurée pour la base de données (europe-southwest1, Madrid).</li>
+            <li>Cloud Storage for Firebase - Google. Les photos de profil sont stockées dans le bucket configuré aux États-Unis.</li>
+            <li>Cloud Functions for Firebase - Google. Les fonctions de messagerie et de demandes d'amitié s'exécutent dans europe-southwest1. Certains traitements planifiés et de suppression s'exécutent dans europe-west1 (Belgique).</li>
+            <li>Firebase Analytics et Crashlytics - Google. Traitent les événements d'utilisation et les rapports de plantage ; leurs lieux de traitement ne sont pas déterminés par la région de Firestore.</li>
+            <li>Spotify et Last.fm. Fournissent des données de catalogue pour la recherche et les suggestions musicales. Aucune connexion à un compte Spotify n'est requise.</li>
           </ul>
         </section>
 
         <section>
           <h2>5. Conservation et suppression des données</h2>
-          <p>Nous ne conservons pas vos données au-delà de la durée d'utilisation de l'application. Lorsque vous supprimez votre compte via le bouton « Supprimer le compte » dans les Paramètres, nous supprimons vos données privées, photo de profil, relations, demandes, jetons, préférences et données musicales. Le profil public est remplacé par un marqueur anonyme afin de ne pas rompre les références techniques. Les messages que vous avez envoyés sont retirés des conversations et vos réactions sont supprimées ; si une conversation devient vide, elle est supprimée. Certains journaux techniques, rapports de plantage ou données statistiques conservés par Google peuvent être soumis aux propres politiques de conservation de Google.</p>
+          <p>Nous conservons les données du compte tant qu'il est actif. Lorsque vous supprimez votre compte via le bouton « Supprimer le compte » dans les Paramètres, nous supprimons vos données privées, photo de profil, relations, demandes, jetons, préférences et données musicales. Le profil public est remplacé par un marqueur anonyme afin de ne pas rompre les références techniques. Les messages que vous avez envoyés sont retirés des conversations et vos réactions sont supprimées ; si une conversation devient vide, elle est supprimée. Certains journaux techniques, rapports de plantage ou données statistiques conservés par Google peuvent être soumis à ses propres durées de conservation.</p>
         </section>
 
         <section>
@@ -401,7 +407,7 @@
           <ul>
             <li>Accès : demander une copie des données que nous détenons à votre sujet.</li>
             <li>Rectification : corriger des données inexactes ou incomplètes.</li>
-            <li>Effacement : supprimer votre compte et toutes les données associées via le bouton « Supprimer le compte » dans les Paramètres.</li>
+            <li>Effacement : demander la suppression de vos données ; vous pouvez aussi supprimer votre compte dans les Paramètres, selon les modalités de la section 5.</li>
             <li>Limitation : demander que nous limitions le traitement de vos données.</li>
             <li>Portabilité : recevoir vos données dans un format structuré et lisible par machine.</li>
             <li>Opposition : vous opposer au traitement fondé sur l'intérêt légitime.</li>
@@ -427,12 +433,12 @@
 
         <section>
           <h2>10. Transferts internationaux de données</h2>
-          <p>Les photos de profil sont stockées dans Google Firebase Storage avec des serveurs situés aux États-Unis. En utilisant l'application, vous autorisez explicitement ce transfert international de données d'images. Google a mis en place les mesures techniques et organisationnelles nécessaires en vertu des Clauses Contractuelles Types approuvées par la Commission Européenne (Art. 46 RGPD) pour garantir un niveau de protection adéquat équivalent à celui de l'UE.</p>
-          <p>Vos données personnelles, messages et données de profil musical sont stockés sur des serveurs situés dans la région européenne (europe-southwest1), au sein de l'UE.</p>
+          <p>Firebase Authentication traite les données d'authentification aux États-Unis, où les photos de profil sont également stockées par Cloud Storage for Firebase. Analytics et Crashlytics peuvent traiter des données dans d'autres lieux de l'infrastructure Google. La région europe-southwest1 de Firestore ne s'applique pas automatiquement à ces autres services.</p>
+          <p>Les transferts hors de l'Espace économique européen sont régis par les conditions de traitement des données de Google et les garanties applicables, notamment les clauses contractuelles types lorsqu'elles s'appliquent. La simple utilisation de l'application ne vaut pas consentement à ces transferts. Vous pouvez demander des informations sur les garanties à armasp80@gmail.com. Les profils, messages et données musicales stockés dans Firestore sont conservés dans europe-southwest1.</p>
         </section>
       </article>
 
-      <article id="policy-el" lang="el" data-title="Πολιτική Απορρήτου" data-updated="Τελευταία ενημέρωση: 5 Μαΐου 2026">
+      <article id="policy-el" lang="el" data-title="Πολιτική Απορρήτου" data-updated="Τελευταία ενημέρωση: 18 Σεπτεμβρίου 2026">
         <section>
           <h2>1. Υπεύθυνος Επεξεργασίας Δεδομένων</h2>
           <p>Το MusiLink αναπτύσσεται και λειτουργεί από τον Pablo Armas (armasp80@gmail.com), εγκατεστημένο στην Ισπανία. Ο Pablo Armas είναι ο υπεύθυνος επεξεργασίας που είναι αρμόδιος για την επεξεργασία των προσωπικών σας δεδομένων σύμφωνα με τον Κανονισμό (ΕΕ) 2016/679 (ΓΚΠΔ).</p>
@@ -462,18 +468,20 @@
 
         <section>
           <h2>4. Υπηρεσίες Τρίτων</h2>
-          <p>Χρησιμοποιούμε τις ακόλουθες υπηρεσίες τρίτων, καθεμία με τη δική της πολιτική απορρήτου:</p>
+          <p>Χρησιμοποιούμε τις ακόλουθες υπηρεσίες τρίτων:</p>
           <ul>
-            <li>Google Firebase Firestore, Crashlytics και Analytics - Google LLC. Τα δεδομένα προφίλ, τα μηνύματα και τα γεγονότα χρήσης αποθηκεύονται σε διακομιστές στην ευρωπαϊκή περιοχή (europe-southwest1).</li>
-            <li>Google Firebase Storage - Google LLC. Οι φωτογραφίες προφίλ αποθηκεύονται σε διακομιστές που βρίσκονται στις Ηνωμένες Πολιτείες υπό τυποποιημένες συμβατικές ρήτρες (Άρθρο 46 ΓΚΠΔ).</li>
-            <li>Cloud Functions - Google LLC. Τα δεδομένα μηνυμάτων και αιτημάτων φιλίας επεξεργάζονται σε διακομιστές στην ευρωπαϊκή περιοχή (europe-southwest1).</li>
-            <li>Spotify και Last.fm. Χρησιμοποιούνται ως πάροχοι μουσικού καταλόγου για αναζήτηση καλλιτεχνών/τραγουδιών και προτάσεις. Δεν απαιτείται σύνδεση λογαριασμού Spotify.</li>
+            <li>Firebase Authentication - Google. Διαχειρίζεται τη σύνδεση στους λογαριασμούς και επεξεργάζεται δεδομένα ταυτοποίησης στις Ηνωμένες Πολιτείες.</li>
+            <li>Cloud Firestore - Google. Τα προφίλ, τα μηνύματα και άλλα κοινωνικά δεδομένα αποθηκεύονται στη διαμορφωμένη περιοχή της βάσης δεδομένων (europe-southwest1, Μαδρίτη).</li>
+            <li>Cloud Storage for Firebase - Google. Οι φωτογραφίες προφίλ αποθηκεύονται στον χώρο αποθήκευσης που έχει διαμορφωθεί στις Ηνωμένες Πολιτείες.</li>
+            <li>Cloud Functions for Firebase - Google. Οι λειτουργίες μηνυμάτων και αιτημάτων φιλίας εκτελούνται στην europe-southwest1. Ορισμένες προγραμματισμένες διαδικασίες και διαδικασίες διαγραφής εκτελούνται στην europe-west1 (Βέλγιο).</li>
+            <li>Firebase Analytics και Crashlytics - Google. Επεξεργάζονται γεγονότα χρήσης και αναφορές σφαλμάτων· οι τοποθεσίες επεξεργασίας τους δεν καθορίζονται από την περιοχή του Firestore.</li>
+            <li>Spotify και Last.fm. Παρέχουν δεδομένα καταλόγου για μουσικές αναζητήσεις και προτάσεις. Δεν απαιτείται σύνδεση λογαριασμού Spotify.</li>
           </ul>
         </section>
 
         <section>
           <h2>5. Διατήρηση και Διαγραφή Δεδομένων</h2>
-          <p>Δεν διατηρούμε τα δεδομένα σας πέρα από τον χρόνο που χρησιμοποιείτε την εφαρμογή. Όταν διαγράφετε τον λογαριασμό σας μέσω του κουμπιού «Διαγραφή λογαριασμού» στις Ρυθμίσεις, διαγράφουμε τα ιδιωτικά σας δεδομένα, τη φωτογραφία προφίλ, τις σχέσεις, τα αιτήματα, τα tokens, τις προτιμήσεις και τα μουσικά δεδομένα. Το δημόσιο προφίλ αντικαθίσταται από ανώνυμο placeholder. Τα μηνύματα που στείλατε αφαιρούνται από τις συνομιλίες· εάν μια συνομιλία αδειάσει, διαγράφεται. Ορισμένες τεχνικές εγγραφές που διατηρεί η Google μπορεί να υπόκεινται στις δικές της πολιτικές διατήρησης.</p>
+          <p>Διατηρούμε τα δεδομένα λογαριασμού όσο ο λογαριασμός είναι ενεργός. Όταν διαγράφετε τον λογαριασμό σας μέσω του κουμπιού «Διαγραφή λογαριασμού» στις Ρυθμίσεις, διαγράφουμε τα ιδιωτικά σας δεδομένα, τη φωτογραφία προφίλ, τις σχέσεις, τα αιτήματα, τα tokens, τις προτιμήσεις και τα μουσικά δεδομένα. Το δημόσιο προφίλ αντικαθίσταται από ανώνυμο placeholder. Τα μηνύματα που στείλατε αφαιρούνται από τις συνομιλίες· εάν μια συνομιλία αδειάσει, διαγράφεται. Ορισμένες τεχνικές εγγραφές που διατηρεί η Google μπορεί να υπόκεινται στις δικές της περιόδους διατήρησης.</p>
         </section>
 
         <section>
@@ -482,7 +490,7 @@
           <ul>
             <li>Πρόσβαση: αίτημα αντιγράφου των δεδομένων που διατηρούμε για εσάς.</li>
             <li>Διόρθωση: διόρθωση ανακριβών ή ελλιπών δεδομένων.</li>
-            <li>Διαγραφή: διαγραφή του λογαριασμού και όλων των δεδομένων μέσω του κουμπιού «Διαγραφή λογαριασμού» στις Ρυθμίσεις.</li>
+            <li>Διαγραφή: αίτημα διαγραφής των δεδομένων σας· μπορείτε επίσης να διαγράψετε τον λογαριασμό στις Ρυθμίσεις, με την έκταση που περιγράφεται στην ενότητα 5.</li>
             <li>Περιορισμός: αίτημα περιορισμού της επεξεργασίας των δεδομένων σας.</li>
             <li>Φορητότητα: λήψη των δεδομένων σας σε δομημένη, αναγνώσιμη από μηχανή μορφή.</li>
             <li>Εναντίωση: εναντίωση στην επεξεργασία βάσει έννομου συμφέροντος.</li>
@@ -508,14 +516,14 @@
 
         <section>
           <h2>10. Διεθνείς Μεταφορές Δεδομένων</h2>
-          <p>Οι φωτογραφίες προφίλ αποθηκεύονται στο Google Firebase Storage με διακομιστές που βρίσκονται στις Ηνωμένες Πολιτείες. Χρησιμοποιώντας την εφαρμογή, εξουσιοδοτείτε ρητά αυτή τη διεθνή μεταφορά δεδομένων εικόνας. Η Google έχει εφαρμόσει τα απαραίτητα τεχνικά και οργανωτικά μέτρα βάσει των Τυποποιημένων Συμβατικών Ρητρών που εγκρίθηκαν από την Ευρωπαϊκή Επιτροπή (Άρθρο 46 ΓΚΠΔ) για την εξασφάλιση επαρκούς επιπέδου προστασίας ισοδύναμου με αυτό στην ΕΕ.</p>
-          <p>Τα προσωπικά σας δεδομένα, τα μηνύματα και τα δεδομένα μουσικού προφίλ αποθηκεύονται σε διακομιστές στην ευρωπαϊκή περιοχή (europe-southwest1), εντός της ΕΕ.</p>
+          <p>Το Firebase Authentication επεξεργάζεται δεδομένα ταυτοποίησης στις Ηνωμένες Πολιτείες, όπου αποθηκεύονται και οι φωτογραφίες προφίλ μέσω του Cloud Storage for Firebase. Τα Analytics και Crashlytics ενδέχεται να επεξεργάζονται δεδομένα σε άλλες τοποθεσίες της υποδομής της Google. Η περιοχή europe-southwest1 του Firestore δεν ισχύει αυτόματα για αυτές τις άλλες υπηρεσίες.</p>
+          <p>Οι διαβιβάσεις εκτός του Ευρωπαϊκού Οικονομικού Χώρου διέπονται από τους όρους επεξεργασίας δεδομένων της Google και τις εφαρμοστέες εγγυήσεις, συμπεριλαμβανομένων των τυποποιημένων συμβατικών ρητρών όπου εφαρμόζονται. Η απλή χρήση της εφαρμογής δεν αποτελεί συγκατάθεση για αυτές τις διαβιβάσεις. Μπορείτε να ζητήσετε πληροφορίες για τις εγγυήσεις στο armasp80@gmail.com. Τα προφίλ, τα μηνύματα και τα μουσικά δεδομένα που αποθηκεύονται στο Firestore διατηρούνται στην europe-southwest1.</p>
         </section>
       </article>
     </main>
 
     <footer>
-      <p>&copy; 2026 MusiLink. Contact: <a href="mailto:armasp80@gmail.com">armasp80@gmail.com</a>. <a href="../account-deletion/">Account deletion</a></p>
+      <p>&copy; 2026 MusiLink. Contact: <a href="mailto:armasp80@gmail.com">armasp80@gmail.com</a>. <a href="../terms-and-conditions/">Terms and Conditions</a> · <a href="../account-deletion/">Account deletion</a></p>
     </footer>
   </div>
 
