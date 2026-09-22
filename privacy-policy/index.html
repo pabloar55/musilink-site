@@ -177,7 +177,7 @@
     <header>
       <p class="brand">MusiLink</p>
       <h1 id="page-title">Privacy Policy</h1>
-      <p class="updated" id="page-updated">Last updated: 20 September 2026</p>
+      <p class="updated" id="page-updated">Last updated: 22 September 2026</p>
       <nav aria-label="Language">
         <button type="button" data-lang="en" aria-pressed="true">English</button>
         <button type="button" data-lang="es" aria-pressed="false">Español</button>
@@ -189,7 +189,7 @@
     <p class="notice">This page contains the Privacy Policy for the MusiLink mobile application.</p>
 
     <main>
-      <article id="policy-en" class="active" lang="en" data-title="Privacy Policy" data-updated="Last updated: 20 September 2026">
+      <article id="policy-en" class="active" lang="en" data-title="Privacy Policy" data-updated="Last updated: 22 September 2026">
         <section>
           <h2>1. Data Controller</h2>
           <p>MusiLink is developed and operated by Pablo Armas (armasp80@gmail.com), established in Spain. Pablo Armas is the data controller responsible for processing your personal data in accordance with Regulation (EU) 2016/679 (GDPR).</p>
@@ -201,7 +201,7 @@
           <ul>
             <li>Account data: name, email address, profile photo, and login identifiers (via email/password or Google Sign-In).</li>
             <li>Music profile data: top artists you select, inferred top genres, daily song selections, and shared songs.</li>
-            <li>Social data: messages, friend requests, and emoji reactions.</li>
+            <li>Social and moderation data: messages, friend requests, emoji reactions, reports of profiles or messages, the reason for a report, the identities involved and, for message reports, a copy of the reported content.</li>
             <li>Technical data: error and crash reports collected by Firebase Crashlytics.</li>
           </ul>
         </section>
@@ -212,6 +212,7 @@
           <ul>
             <li>Providing the service (account, music compatibility, discovery, chat). Legal basis: contract performance (Art. 6.1.b GDPR).</li>
             <li>Music profile features: displaying and comparing your selected music taste. Legal basis: contract performance (Art. 6.1.b GDPR).</li>
+            <li>Safety and moderation: receiving and assessing reports, preserving relevant evidence, preventing abuse and enforcing our Terms and Conditions. Legal basis: our legitimate interest in keeping the service safe (Art. 6.1.f GDPR) and, where applicable, compliance with legal obligations (Art. 6.1.c GDPR).</li>
             <li>App stability: diagnosing crashes and errors. Legal basis: legitimate interest (Art. 6.1.f GDPR).</li>
           </ul>
         </section>
@@ -225,13 +226,14 @@
             <li>Cloud Storage for Firebase - Google. Profile photos are stored in the bucket configured in the United States.</li>
             <li>Cloud Functions for Firebase - Google. Messaging and friend-request functions run in europe-southwest1. Some scheduled and deletion processes run in europe-west1 (Belgium).</li>
             <li>Firebase Crashlytics - Google. Processes error and crash reports; its processing locations are not determined by the Firestore region.</li>
+            <li>Resend (Plus Five Five, Inc.). Sends moderation notification emails to the operator. Those emails may contain the report ID and reason, user identifiers and profile names and, for a reported message, a copy of its content.</li>
             <li>Spotify and Last.fm. Provide catalogue data for music search and suggestions. No Spotify account connection is required.</li>
           </ul>
         </section>
 
         <section>
           <h2>5. Data Retention &amp; Deletion</h2>
-          <p>We keep account data while the account is active. When you delete your account via the 'Delete account' button in Settings, we delete your private data, profile photo, relationships, requests, tokens, preferences, and music data. The public profile is replaced with an anonymous placeholder so technical references do not break. Messages you sent are removed from conversations and your reactions are removed; if a conversation becomes empty, it is deleted. Some technical records or crash reports held by Google may be subject to its own retention periods.</p>
+          <p>We keep account data while the account is active. When you delete your account via the 'Delete account' button in Settings, we delete your private data, profile photo, relationships, requests, tokens, preferences, and music data. The public profile is replaced with an anonymous placeholder so technical references do not break. Messages you sent are removed from conversations and your reactions are removed; if a conversation becomes empty, it is deleted. Reports and copies of reported content may be retained for as long as necessary to investigate abuse, document moderation decisions, protect users and comply with legal obligations, including after an account is deleted. Some technical records, moderation-email records or crash reports held by our providers may be subject to their own retention periods.</p>
         </section>
 
         <section>
@@ -266,12 +268,12 @@
 
         <section>
           <h2>10. International Data Transfers</h2>
-          <p>Firebase Authentication processes authentication data in the United States, and profile photos are stored there through Cloud Storage for Firebase. Crashlytics may process error and crash reports in other Google infrastructure locations. Firestore's europe-southwest1 location does not automatically apply to these other services.</p>
-          <p>Transfers outside the European Economic Area are governed by Google's data processing terms and applicable safeguards, including standard contractual clauses where relevant. Merely using the app does not constitute consent to these transfers. You can request information about the safeguards at armasp80@gmail.com. Profiles, messages and music data stored in Firestore are held in europe-southwest1.</p>
+          <p>Firebase Authentication processes authentication data in the United States, and profile photos are stored there through Cloud Storage for Firebase. Crashlytics may process error and crash reports in other Google infrastructure locations. Resend stores customer data in the United States, including message content and delivery logs. Firestore's europe-southwest1 location does not automatically apply to these other services.</p>
+          <p>Transfers outside the European Economic Area are governed by the providers' data-processing terms and applicable safeguards. These include standard contractual clauses where relevant; Resend also states that it participates in the EU-U.S. Data Privacy Framework. Merely using the app does not constitute consent to these transfers. You can request information about the safeguards at armasp80@gmail.com. Profiles, messages, reports and music data stored in Firestore are held in europe-southwest1, while moderation notification emails sent through Resend are processed separately as described above.</p>
         </section>
       </article>
 
-      <article id="policy-es" lang="es" data-title="Política de privacidad" data-updated="Última actualización: 20 de septiembre de 2026">
+      <article id="policy-es" lang="es" data-title="Política de privacidad" data-updated="Última actualización: 22 de septiembre de 2026">
         <section>
           <h2>1. Responsable del tratamiento</h2>
           <p>MusiLink es desarrollada y operada por Pablo Armas (armasp80@gmail.com), con domicilio en España. Pablo Armas actúa como responsable del tratamiento de tus datos personales conforme al Reglamento (UE) 2016/679 (RGPD).</p>
@@ -283,7 +285,7 @@
           <ul>
             <li>Datos de cuenta: nombre, dirección de correo electrónico, foto de perfil e identificadores de inicio de sesión (mediante correo/contraseña o Google).</li>
             <li>Datos de perfil musical: artistas principales que eliges, géneros principales inferidos, canción del día y canciones compartidas.</li>
-            <li>Datos sociales: mensajes, solicitudes de amistad y reacciones con emojis.</li>
+            <li>Datos sociales y de moderación: mensajes, solicitudes de amistad, reacciones con emojis, denuncias de perfiles o mensajes, el motivo de la denuncia, las identidades implicadas y, en las denuncias de mensajes, una copia del contenido denunciado.</li>
             <li>Datos técnicos: informes de errores y fallos recopilados por Firebase Crashlytics.</li>
           </ul>
         </section>
@@ -294,6 +296,7 @@
           <ul>
             <li>Prestación del servicio (cuenta, compatibilidad musical, descubrimiento, chat). Base legal: ejecución de un contrato (art. 6.1.b RGPD).</li>
             <li>Funciones de perfil musical: mostrar y comparar el gusto musical que has seleccionado. Base legal: ejecución de un contrato (art. 6.1.b RGPD).</li>
+            <li>Seguridad y moderación: recibir y evaluar denuncias, conservar las pruebas pertinentes, prevenir abusos y aplicar nuestros Términos y condiciones. Base legal: nuestro interés legítimo en mantener seguro el servicio (art. 6.1.f RGPD) y, cuando proceda, el cumplimiento de obligaciones legales (art. 6.1.c RGPD).</li>
             <li>Estabilidad de la app: diagnóstico de errores y fallos. Base legal: interés legítimo (art. 6.1.f RGPD).</li>
           </ul>
         </section>
@@ -307,13 +310,14 @@
             <li>Cloud Storage for Firebase - Google. Las fotos de perfil se almacenan en el bucket configurado en Estados Unidos.</li>
             <li>Cloud Functions for Firebase - Google. Las funciones de mensajería y solicitudes de amistad se ejecutan en europe-southwest1. Algunos procesos programados y de eliminación se ejecutan en europe-west1 (Bélgica).</li>
             <li>Firebase Crashlytics - Google. Trata informes de errores y fallos; su ubicación de tratamiento no viene determinada por la región de Firestore.</li>
+            <li>Resend (Plus Five Five, Inc.). Envía al responsable los correos de aviso de moderación. Estos correos pueden contener el ID y el motivo de la denuncia, identificadores y nombres de perfil y, si se denuncia un mensaje, una copia de su contenido.</li>
             <li>Spotify y Last.fm. Proporcionan datos de catálogo para búsquedas y sugerencias musicales. No es necesario conectar una cuenta de Spotify.</li>
           </ul>
         </section>
 
         <section>
           <h2>5. Conservación y eliminación de datos</h2>
-          <p>Conservamos los datos de la cuenta mientras esté activa. Al eliminar tu cuenta mediante el botón 'Eliminar cuenta' en Ajustes, borramos tus datos privados, foto de perfil, relaciones, solicitudes, tokens, preferencias y datos musicales. El perfil público se sustituye por un marcador anónimo para no romper referencias técnicas. Los mensajes que hayas enviado se eliminan de las conversaciones y tus reacciones se retiran; si una conversación queda vacía, se borra. Algunos registros técnicos o informes de fallos conservados por Google pueden estar sujetos a sus propios plazos de retención.</p>
+          <p>Conservamos los datos de la cuenta mientras esté activa. Al eliminar tu cuenta mediante el botón 'Eliminar cuenta' en Ajustes, borramos tus datos privados, foto de perfil, relaciones, solicitudes, tokens, preferencias y datos musicales. El perfil público se sustituye por un marcador anónimo para no romper referencias técnicas. Los mensajes que hayas enviado se eliminan de las conversaciones y tus reacciones se retiran; si una conversación queda vacía, se borra. Las denuncias y las copias del contenido denunciado pueden conservarse durante el tiempo necesario para investigar abusos, documentar decisiones de moderación, proteger a los usuarios y cumplir obligaciones legales, incluso después de eliminar una cuenta. Algunos registros técnicos, registros de correos de moderación o informes de fallos conservados por nuestros proveedores pueden estar sujetos a sus propios plazos de retención.</p>
         </section>
 
         <section>
@@ -348,12 +352,12 @@
 
         <section>
           <h2>10. Transferencias internacionales de datos</h2>
-          <p>Firebase Authentication procesa datos de autenticación en Estados Unidos y las fotos de perfil se almacenan allí mediante Cloud Storage for Firebase. Crashlytics puede tratar informes de errores y fallos en otras ubicaciones de la infraestructura de Google. La ubicación de Firestore en europe-southwest1 no se aplica automáticamente a estos otros servicios.</p>
-          <p>Las transferencias fuera del Espacio Económico Europeo se rigen por las condiciones de tratamiento de datos de Google y las garantías aplicables, incluidas las cláusulas contractuales tipo cuando procedan. El mero uso de la app no constituye consentimiento para estas transferencias. Puedes solicitar información sobre las garantías en armasp80@gmail.com. Los perfiles, mensajes y datos musicales guardados en Firestore se almacenan en europe-southwest1.</p>
+          <p>Firebase Authentication procesa datos de autenticación en Estados Unidos y las fotos de perfil se almacenan allí mediante Cloud Storage for Firebase. Crashlytics puede tratar informes de errores y fallos en otras ubicaciones de la infraestructura de Google. Resend almacena datos de sus clientes en Estados Unidos, incluidos el contenido de los correos y los registros de entrega. La ubicación de Firestore en europe-southwest1 no se aplica automáticamente a estos otros servicios.</p>
+          <p>Las transferencias fuera del Espacio Económico Europeo se rigen por las condiciones de tratamiento de datos de los proveedores y las garantías aplicables. Estas incluyen cláusulas contractuales tipo cuando proceda; Resend también declara participar en el Marco de Privacidad de Datos UE-EE. UU. El mero uso de la app no constituye consentimiento para estas transferencias. Puedes solicitar información sobre las garantías en armasp80@gmail.com. Los perfiles, mensajes, denuncias y datos musicales guardados en Firestore se almacenan en europe-southwest1, mientras que los correos de aviso de moderación enviados mediante Resend se tratan por separado según lo descrito anteriormente.</p>
         </section>
       </article>
 
-      <article id="policy-fr" lang="fr" data-title="Politique de confidentialité" data-updated="Dernière mise à jour : 20 septembre 2026">
+      <article id="policy-fr" lang="fr" data-title="Politique de confidentialité" data-updated="Dernière mise à jour : 22 septembre 2026">
         <section>
           <h2>1. Responsable du traitement</h2>
           <p>MusiLink est développée et exploitée par Pablo Armas (armasp80@gmail.com), établi en Espagne. Pablo Armas agit en tant que responsable du traitement de vos données personnelles conformément au Règlement (UE) 2016/679 (RGPD).</p>
@@ -365,7 +369,7 @@
           <ul>
             <li>Données de compte : nom, adresse e-mail, photo de profil et identifiants de connexion (via e-mail/mot de passe ou Google).</li>
             <li>Données de profil musical : artistes favoris que vous sélectionnez, genres principaux déduits, chanson du jour et chansons partagées.</li>
-            <li>Données sociales : messages, demandes d'amitié et réactions emoji.</li>
+            <li>Données sociales et de modération : messages, demandes d'amitié, réactions emoji, signalements de profils ou de messages, motif du signalement, identités concernées et, pour le signalement d'un message, copie du contenu signalé.</li>
             <li>Données techniques : rapports d'erreurs et de plantages collectés par Firebase Crashlytics.</li>
           </ul>
         </section>
@@ -376,6 +380,7 @@
           <ul>
             <li>Fourniture du service (compte, compatibilité musicale, découverte, chat). Base légale : exécution d'un contrat (art. 6.1.b RGPD).</li>
             <li>Fonctionnalités de profil musical : affichage et comparaison des goûts musicaux que vous avez sélectionnés. Base légale : exécution d'un contrat (art. 6.1.b RGPD).</li>
+            <li>Sécurité et modération : réception et examen des signalements, conservation des éléments pertinents, prévention des abus et application de nos Conditions d'utilisation. Base légale : notre intérêt légitime à assurer la sécurité du service (art. 6.1.f RGPD) et, le cas échéant, le respect d'obligations légales (art. 6.1.c RGPD).</li>
             <li>Stabilité de l'application : diagnostic des erreurs et plantages. Base légale : intérêt légitime (art. 6.1.f RGPD).</li>
           </ul>
         </section>
@@ -389,13 +394,14 @@
             <li>Cloud Storage for Firebase - Google. Les photos de profil sont stockées dans le bucket configuré aux États-Unis.</li>
             <li>Cloud Functions for Firebase - Google. Les fonctions de messagerie et de demandes d'amitié s'exécutent dans europe-southwest1. Certains traitements planifiés et de suppression s'exécutent dans europe-west1 (Belgique).</li>
             <li>Firebase Crashlytics - Google. Traite les rapports d'erreurs et de plantages ; ses lieux de traitement ne sont pas déterminés par la région de Firestore.</li>
+            <li>Resend (Plus Five Five, Inc.). Envoie à l'exploitant les courriels de notification de modération. Ces courriels peuvent contenir l'identifiant et le motif du signalement, les identifiants et noms de profil et, lorsqu'un message est signalé, une copie de son contenu.</li>
             <li>Spotify et Last.fm. Fournissent des données de catalogue pour la recherche et les suggestions musicales. Aucune connexion à un compte Spotify n'est requise.</li>
           </ul>
         </section>
 
         <section>
           <h2>5. Conservation et suppression des données</h2>
-          <p>Nous conservons les données du compte tant qu'il est actif. Lorsque vous supprimez votre compte via le bouton « Supprimer le compte » dans les Paramètres, nous supprimons vos données privées, photo de profil, relations, demandes, jetons, préférences et données musicales. Le profil public est remplacé par un marqueur anonyme afin de ne pas rompre les références techniques. Les messages que vous avez envoyés sont retirés des conversations et vos réactions sont supprimées ; si une conversation devient vide, elle est supprimée. Certains journaux techniques ou rapports de plantage conservés par Google peuvent être soumis à ses propres durées de conservation.</p>
+          <p>Nous conservons les données du compte tant qu'il est actif. Lorsque vous supprimez votre compte via le bouton « Supprimer le compte » dans les Paramètres, nous supprimons vos données privées, photo de profil, relations, demandes, jetons, préférences et données musicales. Le profil public est remplacé par un marqueur anonyme afin de ne pas rompre les références techniques. Les messages que vous avez envoyés sont retirés des conversations et vos réactions sont supprimées ; si une conversation devient vide, elle est supprimée. Les signalements et les copies des contenus signalés peuvent être conservés aussi longtemps que nécessaire pour enquêter sur les abus, documenter les décisions de modération, protéger les utilisateurs et respecter les obligations légales, y compris après la suppression d'un compte. Certains journaux techniques, journaux de courriels de modération ou rapports de plantage conservés par nos prestataires peuvent être soumis à leurs propres durées de conservation.</p>
         </section>
 
         <section>
@@ -430,12 +436,12 @@
 
         <section>
           <h2>10. Transferts internationaux de données</h2>
-          <p>Firebase Authentication traite les données d'authentification aux États-Unis, où les photos de profil sont également stockées par Cloud Storage for Firebase. Crashlytics peut traiter les rapports d'erreurs et de plantages dans d'autres lieux de l'infrastructure Google. La région europe-southwest1 de Firestore ne s'applique pas automatiquement à ces autres services.</p>
-          <p>Les transferts hors de l'Espace économique européen sont régis par les conditions de traitement des données de Google et les garanties applicables, notamment les clauses contractuelles types lorsqu'elles s'appliquent. La simple utilisation de l'application ne vaut pas consentement à ces transferts. Vous pouvez demander des informations sur les garanties à armasp80@gmail.com. Les profils, messages et données musicales stockés dans Firestore sont conservés dans europe-southwest1.</p>
+          <p>Firebase Authentication traite les données d'authentification aux États-Unis, où les photos de profil sont également stockées par Cloud Storage for Firebase. Crashlytics peut traiter les rapports d'erreurs et de plantages dans d'autres lieux de l'infrastructure Google. Resend stocke les données de ses clients aux États-Unis, notamment le contenu des courriels et les journaux de distribution. La région europe-southwest1 de Firestore ne s'applique pas automatiquement à ces autres services.</p>
+          <p>Les transferts hors de l'Espace économique européen sont régis par les conditions de traitement des données des prestataires et les garanties applicables. Celles-ci comprennent les clauses contractuelles types lorsqu'elles s'appliquent ; Resend déclare également participer au Cadre de protection des données UE-États-Unis. La simple utilisation de l'application ne vaut pas consentement à ces transferts. Vous pouvez demander des informations sur les garanties à armasp80@gmail.com. Les profils, messages, signalements et données musicales stockés dans Firestore sont conservés dans europe-southwest1, tandis que les courriels de notification de modération envoyés via Resend sont traités séparément comme indiqué ci-dessus.</p>
         </section>
       </article>
 
-      <article id="policy-el" lang="el" data-title="Πολιτική Απορρήτου" data-updated="Τελευταία ενημέρωση: 20 Σεπτεμβρίου 2026">
+      <article id="policy-el" lang="el" data-title="Πολιτική Απορρήτου" data-updated="Τελευταία ενημέρωση: 22 Σεπτεμβρίου 2026">
         <section>
           <h2>1. Υπεύθυνος Επεξεργασίας Δεδομένων</h2>
           <p>Το MusiLink αναπτύσσεται και λειτουργεί από τον Pablo Armas (armasp80@gmail.com), εγκατεστημένο στην Ισπανία. Ο Pablo Armas είναι ο υπεύθυνος επεξεργασίας που είναι αρμόδιος για την επεξεργασία των προσωπικών σας δεδομένων σύμφωνα με τον Κανονισμό (ΕΕ) 2016/679 (ΓΚΠΔ).</p>
@@ -447,7 +453,7 @@
           <ul>
             <li>Δεδομένα λογαριασμού: όνομα, διεύθυνση email, φωτογραφία προφίλ και αναγνωριστικά σύνδεσης (μέσω email/κωδικού ή Google Sign-In).</li>
             <li>Δεδομένα μουσικού προφίλ: κορυφαίοι καλλιτέχνες που επιλέγετε, συναγόμενα κορυφαία είδη, επιλογές τραγουδιού της ημέρας και κοινοποιημένα τραγούδια.</li>
-            <li>Κοινωνικά δεδομένα: μηνύματα, αιτήματα φιλίας και αντιδράσεις emoji.</li>
+            <li>Κοινωνικά δεδομένα και δεδομένα εποπτείας: μηνύματα, αιτήματα φιλίας, αντιδράσεις emoji, αναφορές προφίλ ή μηνυμάτων, ο λόγος της αναφοράς, οι ταυτότητες των εμπλεκομένων και, για αναφορές μηνυμάτων, αντίγραφο του αναφερόμενου περιεχομένου.</li>
             <li>Τεχνικά δεδομένα: αναφορές σφαλμάτων και δυσλειτουργιών που συλλέγονται από το Firebase Crashlytics.</li>
           </ul>
         </section>
@@ -458,6 +464,7 @@
           <ul>
             <li>Παροχή της υπηρεσίας (λογαριασμός, μουσική συμβατότητα, ανακάλυψη, συνομιλία). Νομική βάση: εκτέλεση σύμβασης (Άρθρο 6.1.β ΓΚΠΔ).</li>
             <li>Λειτουργίες μουσικού προφίλ: εμφάνιση και σύγκριση του επιλεγμένου μουσικού σας γούστου. Νομική βάση: εκτέλεση σύμβασης (Άρθρο 6.1.β ΓΚΠΔ).</li>
+            <li>Ασφάλεια και εποπτεία: παραλαβή και αξιολόγηση αναφορών, διατήρηση σχετικών αποδεικτικών στοιχείων, πρόληψη καταχρήσεων και εφαρμογή των Όρων Χρήσης. Νομική βάση: το έννομο συμφέρον μας για τη διατήρηση της ασφάλειας της υπηρεσίας (Άρθρο 6.1.στ ΓΚΠΔ) και, όπου εφαρμόζεται, η συμμόρφωση με νομικές υποχρεώσεις (Άρθρο 6.1.γ ΓΚΠΔ).</li>
             <li>Σταθερότητα εφαρμογής: διάγνωση σφαλμάτων. Νομική βάση: έννομο συμφέρον (Άρθρο 6.1.στ ΓΚΠΔ).</li>
           </ul>
         </section>
@@ -471,13 +478,14 @@
             <li>Cloud Storage for Firebase - Google. Οι φωτογραφίες προφίλ αποθηκεύονται στον χώρο αποθήκευσης που έχει διαμορφωθεί στις Ηνωμένες Πολιτείες.</li>
             <li>Cloud Functions for Firebase - Google. Οι λειτουργίες μηνυμάτων και αιτημάτων φιλίας εκτελούνται στην europe-southwest1. Ορισμένες προγραμματισμένες διαδικασίες και διαδικασίες διαγραφής εκτελούνται στην europe-west1 (Βέλγιο).</li>
             <li>Firebase Crashlytics - Google. Επεξεργάζεται αναφορές σφαλμάτων και δυσλειτουργιών· οι τοποθεσίες επεξεργασίας του δεν καθορίζονται από την περιοχή του Firestore.</li>
+            <li>Resend (Plus Five Five, Inc.). Αποστέλλει στον υπεύθυνο λειτουργίας μηνύματα ηλεκτρονικού ταχυδρομείου για ειδοποιήσεις εποπτείας. Αυτά μπορεί να περιέχουν το αναγνωριστικό και τον λόγο της αναφοράς, αναγνωριστικά χρηστών και ονόματα προφίλ και, όταν αναφέρεται μήνυμα, αντίγραφο του περιεχομένου του.</li>
             <li>Spotify και Last.fm. Παρέχουν δεδομένα καταλόγου για μουσικές αναζητήσεις και προτάσεις. Δεν απαιτείται σύνδεση λογαριασμού Spotify.</li>
           </ul>
         </section>
 
         <section>
           <h2>5. Διατήρηση και Διαγραφή Δεδομένων</h2>
-          <p>Διατηρούμε τα δεδομένα λογαριασμού όσο ο λογαριασμός είναι ενεργός. Όταν διαγράφετε τον λογαριασμό σας μέσω του κουμπιού «Διαγραφή λογαριασμού» στις Ρυθμίσεις, διαγράφουμε τα ιδιωτικά σας δεδομένα, τη φωτογραφία προφίλ, τις σχέσεις, τα αιτήματα, τα tokens, τις προτιμήσεις και τα μουσικά δεδομένα. Το δημόσιο προφίλ αντικαθίσταται από ανώνυμο placeholder. Τα μηνύματα που στείλατε αφαιρούνται από τις συνομιλίες· εάν μια συνομιλία αδειάσει, διαγράφεται. Ορισμένες τεχνικές εγγραφές ή αναφορές σφαλμάτων και δυσλειτουργιών που διατηρεί η Google μπορεί να υπόκεινται στις δικές της περιόδους διατήρησης.</p>
+          <p>Διατηρούμε τα δεδομένα λογαριασμού όσο ο λογαριασμός είναι ενεργός. Όταν διαγράφετε τον λογαριασμό σας μέσω του κουμπιού «Διαγραφή λογαριασμού» στις Ρυθμίσεις, διαγράφουμε τα ιδιωτικά σας δεδομένα, τη φωτογραφία προφίλ, τις σχέσεις, τα αιτήματα, τα tokens, τις προτιμήσεις και τα μουσικά δεδομένα. Το δημόσιο προφίλ αντικαθίσταται από ανώνυμο placeholder. Τα μηνύματα που στείλατε αφαιρούνται από τις συνομιλίες και οι αντιδράσεις σας αφαιρούνται· εάν μια συνομιλία αδειάσει, διαγράφεται. Οι αναφορές και τα αντίγραφα αναφερόμενου περιεχομένου μπορούν να διατηρούνται για όσο είναι αναγκαίο για τη διερεύνηση καταχρήσεων, την τεκμηρίωση αποφάσεων εποπτείας, την προστασία των χρηστών και τη συμμόρφωση με νομικές υποχρεώσεις, ακόμη και μετά τη διαγραφή λογαριασμού. Ορισμένες τεχνικές εγγραφές, εγγραφές email εποπτείας ή αναφορές σφαλμάτων που διατηρούν οι πάροχοί μας μπορεί να υπόκεινται στις δικές τους περιόδους διατήρησης.</p>
         </section>
 
         <section>
@@ -512,8 +520,8 @@
 
         <section>
           <h2>10. Διεθνείς Μεταφορές Δεδομένων</h2>
-          <p>Το Firebase Authentication επεξεργάζεται δεδομένα ταυτοποίησης στις Ηνωμένες Πολιτείες, όπου αποθηκεύονται και οι φωτογραφίες προφίλ μέσω του Cloud Storage for Firebase. Το Crashlytics ενδέχεται να επεξεργάζεται αναφορές σφαλμάτων και δυσλειτουργιών σε άλλες τοποθεσίες της υποδομής της Google. Η περιοχή europe-southwest1 του Firestore δεν ισχύει αυτόματα για αυτές τις άλλες υπηρεσίες.</p>
-          <p>Οι διαβιβάσεις εκτός του Ευρωπαϊκού Οικονομικού Χώρου διέπονται από τους όρους επεξεργασίας δεδομένων της Google και τις εφαρμοστέες εγγυήσεις, συμπεριλαμβανομένων των τυποποιημένων συμβατικών ρητρών όπου εφαρμόζονται. Η απλή χρήση της εφαρμογής δεν αποτελεί συγκατάθεση για αυτές τις διαβιβάσεις. Μπορείτε να ζητήσετε πληροφορίες για τις εγγυήσεις στο armasp80@gmail.com. Τα προφίλ, τα μηνύματα και τα μουσικά δεδομένα που αποθηκεύονται στο Firestore διατηρούνται στην europe-southwest1.</p>
+          <p>Το Firebase Authentication επεξεργάζεται δεδομένα ταυτοποίησης στις Ηνωμένες Πολιτείες, όπου αποθηκεύονται και οι φωτογραφίες προφίλ μέσω του Cloud Storage for Firebase. Το Crashlytics ενδέχεται να επεξεργάζεται αναφορές σφαλμάτων και δυσλειτουργιών σε άλλες τοποθεσίες της υποδομής της Google. Η Resend αποθηκεύει δεδομένα πελατών στις Ηνωμένες Πολιτείες, συμπεριλαμβανομένου του περιεχομένου email και των αρχείων παράδοσης. Η περιοχή europe-southwest1 του Firestore δεν ισχύει αυτόματα για αυτές τις άλλες υπηρεσίες.</p>
+          <p>Οι διαβιβάσεις εκτός του Ευρωπαϊκού Οικονομικού Χώρου διέπονται από τους όρους επεξεργασίας δεδομένων των παρόχων και τις εφαρμοστέες εγγυήσεις. Αυτές περιλαμβάνουν τυποποιημένες συμβατικές ρήτρες όπου εφαρμόζονται· η Resend δηλώνει επίσης ότι συμμετέχει στο Πλαίσιο Προστασίας Δεδομένων ΕΕ-ΗΠΑ. Η απλή χρήση της εφαρμογής δεν αποτελεί συγκατάθεση για αυτές τις διαβιβάσεις. Μπορείτε να ζητήσετε πληροφορίες για τις εγγυήσεις στο armasp80@gmail.com. Τα προφίλ, τα μηνύματα, οι αναφορές και τα μουσικά δεδομένα που αποθηκεύονται στο Firestore διατηρούνται στην europe-southwest1, ενώ τα email ειδοποίησης εποπτείας που αποστέλλονται μέσω Resend υποβάλλονται σε ξεχωριστή επεξεργασία όπως περιγράφεται παραπάνω.</p>
         </section>
       </article>
     </main>
